@@ -1,7 +1,9 @@
 #ifndef WINDOW_H
 #define WINDOW_H
 
-void window_init();
+#include <GLFW/glfw3.h>
+
+GLFWwindow* window_create();
 void window_destroy();
 
 #endif

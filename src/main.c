@@ -6,7 +6,20 @@ int main (int argc, char *argv[])
 {
 	printf("Rally\n");
 
-	window_init();
+	GLFWwindow *window = window_create();
+
+	/* Loop until the user closes the window */
+	while (!glfwWindowShouldClose(window))
+	{
+		/* Render here */
+		glClear(GL_COLOR_BUFFER_BIT);
+
+		/* Swap front and back buffers */
+		glfwSwapBuffers(window);
+
+		/* Poll for and process events */
+		glfwPollEvents();
+	}
 
 	window_destroy();
 
