@@ -1,3 +1,3 @@
 # Rally
 
-A motosport videogame.
+A motorsport videogame.
